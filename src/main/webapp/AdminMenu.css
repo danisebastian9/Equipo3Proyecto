@@ -1,0 +1,189 @@
+@charset "ISO-8859-1";
+ 
+body {
+    background: #eee;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#navbar {
+    height: 100%;
+    max-width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #f2994ac9;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+#navbar a {
+    padding: 12px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    text-shadow: 2px 2px 2px #eee;
+    display: block;
+}
+#navbar header {
+    padding: 12px 8px 8px 16px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f1f1f1;
+    display: block;
+    text-transform: uppercase;
+}
+
+#navbar a:hover {
+    color: #eee;
+    text-shadow: 2px 2px 3px black;
+}
+
+#main-doc {
+    padding-top: 90px;
+    margin-left: 220px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.main-section header {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4vw;
+}
+
+.main-section {
+    text-align: justify;
+    font-size: 3vmin;
+    margin-bottom: 40px;
+}
+
+.main-section p {
+    padding-top: 40px;
+    width: 60%;
+}
+
+@media screen and (max-height: 450px) {
+    #navbar {padding-top: 15px;}
+    #navbar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar header {
+        margin-bottom: 0;
+    }
+
+    #navbar ul {
+        height: 275px;
+    }
+    #navbar a {
+        font-size: 4vw;
+    }
+
+    #navbar a:hover {
+        cursor: pointer;
+    }
+    
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+        max-height: 200px;
+        z-index: 1;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 230px;
+    }
+
+    .main-section header {
+        font-size: 5vw;
+    }
+
+    .main-section {
+        font-size: 4vmin;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #navbar a {
+        font-size: 5vw;
+    }
+
+    .main-section header {
+        font-size: 7vw;
+    }
+
+    .main-section {
+        font-size: 6vmin;
+    }
+}
+
+fieldset {
+    border-radius: 10px;
+    border: grey solid 2px;
+    margin: 5px;
+}
+
+.inputs {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 2px 3px grey;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.botones {
+    border: none;
+    background: #f2994ac9;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 3px grey;
+    outline: none;
+}
+
+.botones:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 1px grey;
+}
+
+.totales {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.totales label {
+    margin: 5px;
+}
+
+#registrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonesClientes {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#botonesClientes input {
+    margin: 15px;
+}

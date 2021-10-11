@@ -1,0 +1,85 @@
+@charset "ISO-8859-1";
+
+* {
+	font-family: 'Varela Round', sans-serif;
+}
+
+body {
+	background: linear-gradient(to right, #f2984a, #f2c84c);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.labels {
+    display: block;
+    font-size: 2vw;
+    margin: 11px;
+    color: white;
+    text-shadow: 3px 3px 4px #020202;
+}
+
+#fields {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px #2b2a2a;
+    background: #F8E4A5;
+
+}
+
+.inputs {
+    border-radius: 20px;
+    height: 30px;
+    width: 35vw;
+    border: gray;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 2px 3px 9px #2b2a2a;
+    outline: none;
+    font-size: x-large;
+    padding: 10px;
+    padding-left: 30px;
+    color: #333333cf;
+}
+
+.buttons {
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #4cd8f2b8;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 3px 3px 8px #2b2a2a;
+    color: white;
+    text-shadow: 1px 2px 4px #020202;
+    font-size: 2vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.buttons:hover {
+    cursor: pointer;
+    background-color: #4CD8F2;
+    box-shadow: 3px 5px 3px #2b2a2a;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+#cancel {
+    background-color: #864cf2ad;
+}
+
+#cancel:hover {
+    cursor: pointer;
+    background-color: #864CF2;
+    color: #dbe2f8;
+    text-shadow: 2px 2px 2px #080808;
+}
+
