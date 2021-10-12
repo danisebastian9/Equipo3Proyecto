@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/reportes.js"></script>
 <title>Reportes</title>
 <link rel="stylesheet" href="AdminMenu.css">
 </head>
@@ -24,14 +26,15 @@
 		<main id="main-doc">
 			<section class="main-section" id="welcome">
 				<header>Manejo Reportes</header>
-				<form action="Reportes" method="post">
-				<div>
-					<input class="botones" type="submit" name="listadoUsuarios" value="Listado de Usuarios">
-					<input class="botones" type="submit" name="listadoClientes" value="Listado de Clientes">
-					<input class="botones" type="submit" name="ventasCliente" value="Ventas por Cliente">
+				<div id="botonesReportes">
+					<div><button class="botones" id="listadoUsuarios">Listado de Usuarios</button></div>
+					<div><button class="botones" id="listadoClientes">Listado de Clientes</button></div>
+					<div><button class="botones" id="ventasClientes">Ventas por Cliente</button></div>
 				</div>
-				</form>
 			</section>
+			<table id="tabla">
+
+			</table>
 		</main>
 	</div>
 </body>
