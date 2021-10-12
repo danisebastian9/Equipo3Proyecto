@@ -5,6 +5,7 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
+
 #navbar {
     height: 100%;
     max-width: 220px;
@@ -186,4 +187,10 @@ fieldset {
 
 #botonesClientes input {
     margin: 15px;
+}
+
+.labVenta {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
 }

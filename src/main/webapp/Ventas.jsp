@@ -106,7 +106,7 @@ String estado1 = "", estado2 = "", estado3 = "";
                         </div>
                     </fieldset>
                     <div>
-                    	<input type="submit" name="consultar1" value="Consultar">
+                    	<input class="botones" type="submit" name="consultar1" value="Consultar">
                     </div>
                     <fieldset>
                         <legend>Venta</legend>
@@ -115,7 +115,7 @@ String estado1 = "", estado2 = "", estado3 = "";
                         <input type="hidden" name="consec" value="<%=consecutivo%>">
                         <input type="hidden" name="codigoVenta" value="<%=codigo_venta%>">
                         <div class="lineaProd">
-                            <div id="labelsVentas">
+                            <div class="labVenta">
                             	<label for="codProd">Codigo Producto</label>
                             	<label for="nomProd">Nombre Producto</label>
                             	<label for="preProd">Precio Producto</label>
@@ -124,7 +124,7 @@ String estado1 = "", estado2 = "", estado3 = "";
                             </div>
                             <div>
                             	<input class="inputs" type="text" name="codProd1" id="codProd1" value="<%=codProd1%>"  required >
-                            	<input type="submit" name="consulta2" value="Consultar">
+                            	<input class="botones" type="submit" name="consulta2" value="Consultar">
                             	<input class="inputs" type="text" name="nomProd1" id="nomProd1" value="<%=nombre_producto%>">
                             	<input class="inputs" type="number" name="preProd1" id="preProd1" value="<%=precio_venta%>">
                             	<input class="inputs" type="number" name="cantProd1" id="cantProd1" value="<%=cantProd1%>" onchange="calcular1()">
@@ -135,7 +135,7 @@ String estado1 = "", estado2 = "", estado3 = "";
                             </div>
                             <div>
                             	<input class="inputs" type="text" name="codProd2" id="codProd2" value="<%=codProd2%>">
-                            	<input type="submit" name="consulta3" value="Consultar">
+                            	<input class="botones" type="submit" name="consulta3" value="Consultar">
                             	<input class="inputs" type="text" name="nomProd2" id="nomProd2" value="<%=nombre_producto2%>">
                             	<input class="inputs" type="number" name="preProd2" id="preProd2" value="<%=precio_venta2%>">
                             	<input class="inputs" type="number" name="cantProd2" id="cantProd2" value="<%=cantProd2%>" onchange="calcular2()">
@@ -145,7 +145,7 @@ String estado1 = "", estado2 = "", estado3 = "";
 								<input type="hidden" name="valorventa2" id="valorventa2">                            </div>
                             <div>
                             	<input class="inputs" type="text" name="codProd3" id="codProd3" value="<%=codProd3%>">
-                            	<input  type="submit" name="consulta4" value="Consultar">
+                            	<input class="botones" type="submit" name="consulta4" value="Consultar">
                             	<input class="inputs" type="text" name="nomProd3" id="nomProd3" value="<%=nombre_producto3%>">
                             	<input class="inputs" type="number" name="preProd3" id="preProd3" value="<%=precio_venta3%>">
                             	<input class="inputs" type="number" name="cantProd3" id="cantProd3" value="<%=cantProd3%>" onchange="calcular3()">
@@ -155,7 +155,7 @@ String estado1 = "", estado2 = "", estado3 = "";
 								<input type="hidden" name="valorventa3" id="valorventa3">
                             </div>
                             <div>
-                            	<input type="button" onclick="calcularTotal()" name="Calcular" value="Calcular">
+                            	<input class="botones" type="button" onclick="calcularTotal()" name="Calcular" value="Calcular">
                             </div>
                             <div>
                                 <div>
@@ -171,7 +171,7 @@ String estado1 = "", estado2 = "", estado3 = "";
                                 	<input class="inputs" type="number" name="totalConIva" id="totalConIva">
                                 </div>
                             </div>
-                            <input type="submit" name="registrarVenta" value="Registrar Venta">
+                            <input class="botones" type="submit" name="registrarVenta" value="Registrar Venta">
                         </div>
                     </fieldset>
                 </form>
