@@ -17,7 +17,9 @@
                 <a class="nav-link" href="Productos.jsp">Productos</a>
                 <a class="nav-link" href="Proveedores.jsp">Proveedores</a>
                 <a class="nav-link" href="Ventas.jsp">Ventas</a>
+                <a class="nav-link" href="Reportes.jsp">Reportes</a>
                 <a class="nav-link" href="Index.jsp">Home</a>
+
             </div>
         </nav>
         <main id="main-doc">

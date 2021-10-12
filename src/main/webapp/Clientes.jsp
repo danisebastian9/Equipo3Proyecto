@@ -43,6 +43,7 @@ out.print("<script>alert('"+mensaje+"');</script>");//Mensaje con alert js
                 <a class="nav-link" href="Productos.jsp">Productos</a>
                 <a class="nav-link" href="Proveedores.jsp">Proveedores</a>
                 <a class="nav-link" href="Ventas.jsp">Ventas</a>
+                <a class="nav-link" href="Reportes.jsp">Home</a>
                 <a class="nav-link" href="Index.jsp">Home</a>
             </div>
         </nav>

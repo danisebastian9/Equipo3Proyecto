@@ -25,6 +25,7 @@
                     <a class="nav-link" href="Clientes.jsp">Clientes</a>
                     <a class="nav-link" href="Proveedores.jsp">Proveedores</a>
 					<a class="nav-link" href="Ventas.jsp">Ventas</a>
+					<a class="nav-link" href="Reportes.jsp">Reportes</a>
                     <a class="nav-link" href="Index.jsp">Home</a>
                 </div>
             </nav>
