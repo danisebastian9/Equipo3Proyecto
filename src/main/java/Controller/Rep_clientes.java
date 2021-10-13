@@ -1,4 +1,4 @@
-package main.java.Controller;
+package Controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,8 +13,8 @@ import javax.swing.JOptionPane;
 
 import com.google.gson.Gson;
 
-import main.java.Model.ClientesDTO;
-import main.java.Model.Reporte_ClientesDAO;
+import Model.ClientesDTO;
+import Model.Reporte_ClientesDAO;
 
 
 /**

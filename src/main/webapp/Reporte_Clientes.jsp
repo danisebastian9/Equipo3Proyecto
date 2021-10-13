@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<script type="text/javascript" src="js2/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="js2/rep_clientes.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/rep_clientes.js"></script>
 <title>ReporteClientes</title>
 </head>
 <body>
