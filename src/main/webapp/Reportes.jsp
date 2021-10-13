@@ -27,7 +27,7 @@
 			<section class="main-section" id="welcome">
 				<header>Manejo Reportes</header>
 				<div id="botonesReportes">
-					<div><button class="botones" id="listadoUsuarios">Listado de Usuarios</button></div>
+					<div><button class="listadoUsuarios" >Listado de Usuarios</button></div>
 					<div><button class="botones" id="listadoClientes">Listado de Clientes</button></div>
 					<div><button class="botones" id="ventasClientes">Ventas por Cliente</button></div>
 				</div>

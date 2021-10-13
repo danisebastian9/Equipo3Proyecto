@@ -1,11 +1,10 @@
 $(document).ready(function(){
     function listarUsuarios(){
-        var men = document.getElementById("mensaje").value
         $.ajax({
             type:"post",
             url:"Reportes",
             dataType:"json",
-            data:{opcion:"usuarios", mensaje: men},
+            data:{opcion:"usuarios"},
             success: function(result){
                 console.log(result)
                 var tabla = document.querySelector("#tabla")
@@ -29,7 +28,7 @@ $(document).ready(function(){
             }
         })
     }
-    $('#listadoUsuarios').on('click',function(){
+    $('.listadoUsuarios').on('click',function(){
         listarUsuarios();
     })
 })
