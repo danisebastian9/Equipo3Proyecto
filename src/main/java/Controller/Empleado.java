@@ -49,10 +49,10 @@ public class Empleado extends HttpServlet {
 			EmpleadoDTO empDto = new EmpleadoDTO(cedula_empleado, email_empleado, nombre_empleado, contrasena,
 					empleado);
 			if (empDao.Insertar_Empleado(empDto)) {
-				JOptionPane.showMessageDialog(null, "Empleado registrado exitosamente");
+				//JOptionPane.showMessageDialog(null, "Empleado registrado exitosamente");
 				response.sendRedirect("Empleados.jsp?men=Empleado registrado exitosamente");
 			} else {
-				JOptionPane.showMessageDialog(null, "El empleado NO se registro");
+				//JOptionPane.showMessageDialog(null, "El empleado NO se registro");
 				response.sendRedirect("Empleados.jsp?men=El empleado NO se registro");
 			}
 		}
@@ -94,10 +94,10 @@ public class Empleado extends HttpServlet {
 			EmpleadoDTO empDTO = new EmpleadoDTO(cedula_empleado, email_empleado, nombre_empleado, contrasena,
 					empleado);
 			if (empDao.Actualizar_Empleado(empDTO)) {
-				JOptionPane.showMessageDialog(null, "Empleado actualizado exitosamente");
+				//JOptionPane.showMessageDialog(null, "Empleado actualizado exitosamente");
 				response.sendRedirect("Empleados.jsp?men=Empleado actualizado exitosamente");
 			} else {
-				JOptionPane.showMessageDialog(null, "El empleado NO se actualizo");
+				//JOptionPane.showMessageDialog(null, "El empleado NO se actualizo");
 				response.sendRedirect("Empleados.jsp?men=El empleado NO se actualizo");
 			}
 		}

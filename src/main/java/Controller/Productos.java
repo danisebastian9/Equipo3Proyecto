@@ -62,13 +62,13 @@ public class Productos extends HttpServlet {
 				file.close();
 				JOptionPane.showMessageDialog(null, "Archivo cargado correctamente");
 				if(prodDao.Cargar_productos(Url + nombre + ".csv")) {
-					JOptionPane.showMessageDialog(null, "Productos registrados correctamente");
+					response.sendRedirect("Productos.jsp?men= Productos registrados correctamente");
 				} else {
-					JOptionPane.showMessageDialog(null, "Productos no se registrados correctamente");
+					response.sendRedirect("Productos.jsp?men= Productos no se registrados correctamente");
 				}
 		
 			} catch (Exception e) {
-				JOptionPane.showMessageDialog(null, "Error al cargar el archivo" + e);
+				response.sendRedirect("Productos.jsp?men= Error al cargar el archivo");
 			}
 		}
 		
@@ -115,10 +115,10 @@ public class Productos extends HttpServlet {
 			ProductosDTO prodDTO = new ProductosDTO(codigo_producto, ivacompra, nitproveedor_key, 
 					nombre_producto, precio_compra, precio_venta);
 			if (prodDao.Actualizar_Producto(prodDTO)) {
-				JOptionPane.showMessageDialog(null, "Producto actualizado correctamente");
+				//JOptionPane.showMessageDialog(null, "Producto actualizado correctamente");
 				response.sendRedirect("Productos.jsp?men=Producto actualizado correctamente");
 			} else {
-				JOptionPane.showMessageDialog(null, "Producto no actualizado correctamente");
+				//JOptionPane.showMessageDialog(null, "Producto no actualizado correctamente");
 				response.sendRedirect("Productos.jsp?men=Producto no actualizado correctamente");
 			}
 		}
