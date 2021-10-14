@@ -27,7 +27,7 @@ $(document).ready(function(){
 				}
 				
 				tabla.innerHTML+=`<tr>
-				<td>Total</td>
+				<td id="total">Total</td>
 				<td colspan=2>${totalGeneral}</td>
 				</tr>`
 			}

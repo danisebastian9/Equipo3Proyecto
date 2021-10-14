@@ -12,7 +12,7 @@
 long cedula_cliente=0, cedula_empleado=0, consecutivo=0, codigo_venta=0;
 double t_venta=0, t_iva=0, t_venta_iva=0;
 String nom_cliente="", nom_empleado="", estado="", mensaje="";
-int codigo_producto, codProd1 = 0, codProd2 = 0, codProd3 = 0, cantProd1 = 0, cantProd2 = 0, cantProd3 = 0;
+int codigo_producto = 0, codProd1 = 0, codProd2 = 0, codProd3 = 0, cantProd1 = 0, cantProd2 = 0, cantProd3 = 0;
 double ivacompra1 = 0, ivacompra2 = 0, ivacompra3 = 0, precio_venta, precio_venta2, precio_venta3;
 String nombre_producto = "", nombre_producto2 = "", nombre_producto3 = "";
 String estado1 = "", estado2 = "", estado3 = "";
@@ -84,6 +84,42 @@ String estado1 = "", estado2 = "", estado3 = "";
 					nombre_producto3 = request.getParameter("nombre_producto3");
 					precio_venta3 = Double.parseDouble(request.getParameter("precio_venta3"));
 					estado3 = "disabled";
+				}
+				%>
+
+				<%
+				if (request.getParameter("limp") != null){
+
+					cedula_cliente=0; 
+					cedula_empleado=0; 
+					consecutivo=0; 
+					codigo_venta=0;
+					t_venta=0; 
+					t_iva=0; 
+					t_venta_iva=0;
+					nom_cliente=""; 
+					nom_empleado=""; 
+					estado=""; 
+					mensaje="";
+					codigo_producto = 0;
+					codProd1 = 0; 
+					codProd2 = 0; 
+					codProd3 = 0; 
+					cantProd1 = 0; 
+					cantProd2 = 0; 
+					cantProd3 = 0;
+					ivacompra1 = 0; 
+					ivacompra2 = 0; 
+					ivacompra3 = 0; 
+					precio_venta= 0; 
+					precio_venta2 = 0;
+					precio_venta3 = 0;
+					nombre_producto = ""; 
+					nombre_producto2 = ""; 
+					nombre_producto3 = "";
+					estado1 = ""; 
+					estado2 = ""; 
+					estado3 = "";
 				}
 				%>
 
@@ -173,6 +209,7 @@ String estado1 = "", estado2 = "", estado3 = "";
                                 </div>
                             </div>
                             <input class="botones" type="submit" name="registrarVenta" value="Registrar Venta">
+                            <input class="botones" type="submit" name="limpiar" value="Limpiar">
                         </div>
                     </fieldset>
                 </form>

@@ -203,9 +203,31 @@ fieldset {
 
 #tabla {
 	margin-top: 50px;
-	display:flex;
+	margin-top: 9%;
+    margin-left: auto;
+    margin-right: auto;
+    border: grey solid 2px;
+    padding: 14px;
+    border-radius: 20px;
+    background: #8080802e;
 }
 
-#tabla tr {
+#tabla th {
+    padding: 8px;
+    border-radius: 32px;
+    background: #f2994ac9;
+    border: grey solid 2px;
+}
+
+
+#tabla td {
 	border: grey solid 2px;
+    padding: 8px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+#total {
+    background-color: #f2994ac9;
+    font-weight: bold;
 }

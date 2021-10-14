@@ -193,6 +193,9 @@ public class Ventas extends HttpServlet {
 			// TODO: handle exception
 		}
 
+		if (request.getParameter("limpiar") != null) {
+			response.sendRedirect("Ventas.jsp?limp= limpiar");
+		}
 	}
 
 }
