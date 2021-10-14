@@ -32,7 +32,7 @@ public class DetalleVentaDAO {
 			ps.setDouble(6, valoriva);
 			resul = ps.executeUpdate() > 0;
 			if (resul) {
-				sql = "select codigo_venta_key from tienda_generica.detalle_ventas order by codigo_detalle_venta desc limit 1";
+				sql = "select codigo_venta_key from detalle_ventas order by codigo_detalle_venta desc limit 1";
 				ps = con.prepareStatement(sql);
 				res = ps.executeQuery();
 				while (res.next()) {

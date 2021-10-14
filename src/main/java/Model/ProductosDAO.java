@@ -35,7 +35,7 @@ public class ProductosDAO {
 
 		ProductosDTO prod = null;
 		try {
-			String sql = "select * from tienda_generica.productos where codigo_producto=?";
+			String sql = "select * from productos where codigo_producto=?";
 			ps = con.prepareStatement(sql);
 			ps.setInt(1, codigo_producto);
 			res = ps.executeQuery();

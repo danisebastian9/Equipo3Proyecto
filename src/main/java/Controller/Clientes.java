@@ -87,9 +87,9 @@ public class Clientes extends HttpServlet {
 			telefono = request.getParameter("telefono");
 			ClientesDTO cliDto = new ClientesDTO(cedula, direccion, email, nombre, telefono);
 			if(cliDao.Actualizar_Clientes(cliDto)) {
-				response.sendRedirect("Libros.jsp?men=Cliente Actualizado Exitosamente.");
+				response.sendRedirect("Clientes.jsp?men=Cliente Actualizado Exitosamente.");
 			}else {
-				response.sendRedirect("Libros.jsp?men=El Cliente no se Actualizo.");
+				response.sendRedirect("Clientes.jsp?men=El Cliente no se Actualizo.");
 			}
 			}
 		

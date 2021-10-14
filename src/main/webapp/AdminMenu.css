@@ -200,3 +200,12 @@ fieldset {
     margin-top: 80px;
     flex-direction: column;
 }
+
+#tabla {
+	margin-top: 50px;
+	display:flex;
+}
+
+#tabla tr {
+	border: grey solid 2px;
+}

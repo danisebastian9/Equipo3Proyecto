@@ -47,7 +47,7 @@ public class Productos extends HttpServlet {
 		if(request.getParameter("cargar") != null) {
 			Part archivo = request.getPart("archivo");
 			String nombre = request.getParameter("nombre");
-			String Url="/Users/acruz/Development/Estudio/Prueba/Equipo3Grupo31/src/main/webapp/Doc/	";
+			String Url="/Users/sebas/Documents/Development/MinTic/ProyectoCiclo3/Equipo3Proyecto/src/main/webapp/Doc";
 			
 			try {
 				InputStream file = archivo.getInputStream();

@@ -37,7 +37,6 @@ public class Reportes extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String op = request.getParameter("opcion");
-		JOptionPane.showMessageDialog(null, op);
 		
 		PrintWriter salida = response.getWriter();
 		Gson datos = new Gson();

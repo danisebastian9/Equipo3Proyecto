@@ -39,7 +39,7 @@ public class EmpleadoDAO {
 		
 		EmpleadoDTO emp = null;
 		try {
-			String sql = "select * from tienda_generica.empleados where cedula_empleado=?";
+			String sql = "select * from empleados where cedula_empleado=?";
 			ps = con.prepareStatement(sql);
 			ps.setLong(1, cedula_empleado);
 			res = ps.executeQuery();

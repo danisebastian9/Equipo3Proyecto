@@ -47,10 +47,10 @@ public class Proveedor extends HttpServlet {
 			ProveedoresDTO provDto = new ProveedoresDTO(nitproveedor, ciudad_proveedor, direccion_proveedor, 
 					nombre_proveedor, telefono_proveedor);
 			if (provDAO.Insertar_Proveedor(provDto)) {
-				JOptionPane.showMessageDialog(null, "Proveedor registrado exitosamente");
+				//JOptionPane.showMessageDialog(null, "Proveedor registrado exitosamente");
 				response.sendRedirect("Proveedores.jsp?men=Proveedor registrado exitosamente");
 			} else {
-				JOptionPane.showMessageDialog(null, "El Proveedor NO se registro");
+				//JOptionPane.showMessageDialog(null, "El Proveedor NO se registro");
 				response.sendRedirect("Proveedores.jsp?men=El Proveedor NO se registro");
 			}
 		}
@@ -92,10 +92,10 @@ public class Proveedor extends HttpServlet {
 					ProveedoresDTO provDTO = new ProveedoresDTO(nitproveedor, ciudad_proveedor, direccion_proveedor, 
 							nombre_proveedor, telefono_proveedor);
 					if (provDAO.Actualizar_Proveedor(provDTO)) {
-						JOptionPane.showMessageDialog(null, "Proveedor Actualizado exitosamente");
+						//JOptionPane.showMessageDialog(null, "Proveedor Actualizado exitosamente");
 						response.sendRedirect("Proveedores.jsp?men=Proveedor actualizado exitosamente");
 					} else {
-						JOptionPane.showMessageDialog(null, "El Proveedor NO se actualizo");
+						//JOptionPane.showMessageDialog(null, "El Proveedor NO se actualizo");
 						response.sendRedirect("Proveedores.jsp?men=El Proveedor NO se actualizo");
 					}
 				}

@@ -32,7 +32,7 @@ public class VentasDAO {
 			ps.setDouble(5, 0);
 			resul = ps.executeUpdate()>0;
 			if(resul) {
-				sql = "select codigo_venta from tienda_generica.ventas order by codigo_venta desc limit 1";
+				sql = "select codigo_venta from ventas order by codigo_venta desc limit 1";
 				ps = con.prepareStatement(sql);
 				res = ps.executeQuery();
 				while(res.next()) {

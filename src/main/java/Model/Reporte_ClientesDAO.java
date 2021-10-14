@@ -21,7 +21,7 @@ public class Reporte_ClientesDAO {
 		ArrayList<ClientesDTO> lista = new ArrayList<>();
 		
 		try {
-			String sql = "select * from tienda_generica.clientes";
+			String sql = "select * from clientes";
 			ps = con.prepareStatement(sql);
 			res = ps.executeQuery();
 			while(res.next()) {
