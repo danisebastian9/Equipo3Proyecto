@@ -1,3 +1,22 @@
+## (EN)
+
+# Craft store project in JAVA
+
+Carried out as part of Cycle 3 of the software development program for MINTIC through El Bosque University.
+It was carried out in groups of 5 members under the SCRUM modality and administration by Trello where the roles were exchanged and all the members contributed to the code.
+
+* Full frontend and backend development.
+* SCRUM framework.
+* HTML5 CSS3, JavaWeb, MVC, MySQL, JavaScript, Jquery,
+* Handling CSV, JSON
+* Basic validation of User, user: admininicial password: admin123456
+* Complete CRUD management for Employees, Clients, Products, Sales, Suppliers and Reports
+* Deployment in virtual unit AWS with Tomcat
+* Collaboration using GIT / GITHUB
+
+# Project address: http://3.86.34.127:8080/Equipo3
+
+
 ## (ES)
 
 # Proyecto tienda de artesanias en JAVA
