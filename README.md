@@ -14,8 +14,6 @@ It was carried out in groups of 5 members under the SCRUM modality and administr
 * Deployment in virtual unit AWS with Tomcat
 * Collaboration using GIT / GITHUB
 
-# Project address: http://3.86.34.127:8080/Equipo3
-
 
 ## (ES)
 
